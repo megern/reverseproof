@@ -16,7 +16,7 @@ def run(model,manifest,evidence_path,output):
     os.environ.update(HF_HUB_OFFLINE="1",TRANSFORMERS_OFFLINE="1",HF_HUB_DISABLE_TELEMETRY="1",DO_NOT_TRACK="1")
     spec=json.loads(manifest.read_text());verified={}
     for name,metadata in spec["files"].items():
-        if name not in ("config.json","model.safetensors","tokenizer.json","tokenizer_config.json","vocab.json","merges.txt"):continue
+        if name not in ("config.json","generation_config.json","model.safetensors","tokenizer.json","tokenizer_config.json","vocab.json","merges.txt"):continue
         actual=hashlib.sha256((model/name).read_bytes()).hexdigest()
         if actual!=metadata["sha256"]:raise ValueError("Local model identity mismatch: "+name)
         verified[name]=actual

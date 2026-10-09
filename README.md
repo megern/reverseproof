@@ -30,6 +30,16 @@ python3 -m reverseproof.cli propose-pattern build/original
 
 For offline model experiments, see `python3 run_local_study.py --help`. Install the optional local dependencies using `python3 -m pip install -e ".[local]"` in your local environment. Provide the model directory, pinned manifest, a fresh output directory. The default memory guard is included; the original two rounds used the equivalent guard frozen from [m1-memory-research](https://github.com/megern/m1-memory-research). The guard caps process-tree RSS at 6 GiB, MLX allocations at 4 GiB, system swap growth at 1536 MiB and job time at 900 seconds. Whole-system measurements cannot establish causal attribution to a single process. No adapter was trained for this reversing task.
 
+## v0.2.0: one local workflow
+
+```sh
+python3 -m reverseproof.agent --target build/original --model /LOCAL/models/qwen3-0.6b-original --output /LOCAL/runs/reverseproof-fresh
+```
+
+This inspects the target and obtains an offline model hypothesis; it does not execute the target. For an owned trusted fixture only, add `--owned-sha256 EXACT_HASH_FROM_INSPECT` to enable the bounded behavioral check. The output directory must be fresh. A rejected or abstaining model response can use an explicitly labeled exact-instruction-rule fallback. A valid-but-refuted model response remains refuted; it is never replaced with a more favorable rule answer. Any model process/resource failure stops the workflow before target execution.
+
+The integrated workflow was also run on the owned original fixture: the model returned a valid but incorrect proposal, and the verifier retained its refutation with 120 counterexamples. It did not substitute a favorable rule outcome. See `results/workflow-v1`. A separate real run without an owned execution approval retained an unverified hypothesis with no target-execution report (`results/static-workflow-v1`). The current suite passes 20 tests. This is another related integration smoke test, not an independent held-out benchmark.
+
 ## Evidence contract
 
 Each target has a SHA-256 identity; tool output has a separate digest. Model proposals cite tool indices. The validator rejects extra actions, unsupported schemas and invalid citations. Citation existence alone does not establish semantic support. The verifier records concrete inputs, expected and observed outputs, counterexamples and inconclusive outcomes. Disassembly addresses are virtual addresses, not file offsets. Finite tests do not prove universal equivalence, source recovery or safety.

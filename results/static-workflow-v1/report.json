@@ -1,0 +1,23 @@
+{
+  "target_sha256": "7fa03dc69156efd3b851f8bd4759c18f1db8b5fcd8f5c5c671c6400d84b0acbe",
+  "local_model_status": "unverified_hypothesis",
+  "hypothesis_method": "local_model",
+  "hypothesis": {
+    "proposal": {
+      "claim": {
+        "kind": "clamp",
+        "lower": -3,
+        "upper": 27
+      },
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "target_sha256": "7fa03dc69156efd3b851f8bd4759c18f1db8b5fcd8f5c5c671c6400d84b0acbe"
+    },
+    "status": "unverified_hypothesis"
+  },
+  "status": "unverified_hypothesis",
+  "scope": "Fixed workflow, not a self-directed tool loop. Model and rule outcomes are distinguished. Finite input support is not universal equivalence. Owned digest approval is not OS isolation."
+}

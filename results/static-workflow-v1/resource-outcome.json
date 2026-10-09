@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "guard_stop": null,
+  "peak_process_tree_rss_bytes": 2234859520,
+  "elapsed_seconds": 6.6756497079040855,
+  "system_swap_growth_bytes": -8388608,
+  "log": "model.log"
+}
