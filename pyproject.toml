@@ -6,5 +6,10 @@ name = "reverseproof"
 version = "0.1.0"
 description = "Bounded behavioral evidence for local reverse engineering"
 requires-python = ">=3.10"
+[project.optional-dependencies]
+local = ["mlx==0.32.3", "mlx-lm==0.32.0", "psutil==7.2.2"]
 [project.scripts]
 reverseproof = "reverseproof.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["reverseproof*"]

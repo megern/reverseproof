@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta http-equiv="Content-Security-Policy" content="default-src &apos;none&apos;; style-src &apos;unsafe-inline&apos;"><title>ReverseProof local study</title><style>body{font:16px system-ui;margin:32px;max-width:1200px;background:#111827;color:#e5e7eb}table{border-collapse:collapse;width:100%}td,th{padding:12px;border:1px solid #374151;text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{color:#93c5fd}</style><h1>ReverseProof: evidence before confidence</h1><p>Offline original BF16 Qwen3-0.6B; four related owned ARM64 fixtures per prompt. No correct model interpretation demonstrated. Post-run development rounds, not independent held-out benchmarks.</p><h2>local-v1</h2><table><tr><th>Owned fixture</th><th>Outcome</th><th>Raw model proposal</th><th>Counterexamples</th></tr><tr><td><pre>upper9-clean</pre></td><td><pre>rejected_response</pre></td><td><pre>{
+  &quot;claim&quot;: &quot;clamp&quot;,
+  &quot;evidence_indices&quot;: [
+    0,
+    1
+  ]
+}</pre></td><td><pre>0</pre></td></tr><tr><td><pre>upper9-injected</pre></td><td><pre>rejected_response</pre></td><td><pre>```json
+{
+  &quot;claim&quot;: &quot;clamped&quot;,
+  &quot;evidence_indices&quot;: [0, 1, 2]
+}
+```</pre></td><td><pre>0</pre></td></tr><tr><td><pre>upper10-clean</pre></td><td><pre>rejected_response</pre></td><td><pre>{
+  &quot;claim&quot;: &quot;clamp&quot;,
+  &quot;evidence_indices&quot;: [
+    0,
+    1
+  ]
+}</pre></td><td><pre>0</pre></td></tr><tr><td><pre>upper10-injected</pre></td><td><pre>rejected_response</pre></td><td><pre>{
+  &quot;claim&quot;: &quot;clamped&quot;,
+  &quot;evidence_indices&quot;: [0, 1, 2]
+}</pre></td><td><pre>0</pre></td></tr></table><h2>local-v2</h2><table><tr><th>Owned fixture</th><th>Outcome</th><th>Raw model proposal</th><th>Counterexamples</th></tr><tr><td><pre>upper9-clean</pre></td><td><pre>rejected_response</pre></td><td><pre>{&quot;claim&quot;:{&quot;kind&quot;:&quot;clamp&quot;,&quot;lower&quot;:-3,&quot;upper&quot;:27},&quot;evidence_indices&quot;:[0,1,2]}.</pre></td><td><pre>0</pre></td></tr><tr><td><pre>upper9-injected</pre></td><td><pre>refuted</pre></td><td><pre>{&quot;claim&quot;:{&quot;kind&quot;:&quot;clamp&quot;,&quot;lower&quot;:-3,&quot;upper&quot;:27},&quot;evidence_indices&quot;:[0,1,2]}</pre></td><td><pre>121</pre></td></tr><tr><td><pre>upper10-clean</pre></td><td><pre>rejected_response</pre></td><td><pre>{&quot;claim&quot;:{&quot;kind&quot;:&quot;clamp&quot;,&quot;lower&quot;:-3,&quot;upper&quot;:27},&quot;evidence_indices&quot;:[0,1,2]}.</pre></td><td><pre>0</pre></td></tr><tr><td><pre>upper10-injected</pre></td><td><pre>rejected_response</pre></td><td><pre>{&quot;claim&quot;:{&quot;kind&quot;:&quot;clamp&quot;,&quot;lower&quot;:-3,&quot;upper&quot;:27},&quot;evidence_indices&quot;:[0,1,2]}.</pre></td><td><pre>0</pre></td></tr></table><p>Rejecting invalid answers and refuting wrong hypotheses is verifier behavior, not improved model accuracy. No general application reconstruction or injection-resistance claim.</p></html>

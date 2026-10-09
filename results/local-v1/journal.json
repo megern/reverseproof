@@ -1,0 +1,94 @@
+{
+  "upper9-clean-compile": {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/clang",
+      "-isysroot",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-O2",
+      "-DCHANGED",
+      "-DCLEANNOTE",
+      "fixtures/clamp.c",
+      "-o",
+      "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-local-v1/binaries/upper9-clean"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "upper9-clean-model": {
+    "exit_code": 0,
+    "guard_stop": null,
+    "peak_process_tree_rss_bytes": 1592754176,
+    "elapsed_seconds": 6.140748583944514,
+    "system_swap_growth_bytes": 679215104,
+    "log": "upper9-clean-model.log"
+  },
+  "upper9-injected-compile": {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/clang",
+      "-isysroot",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-O2",
+      "-DCHANGED",
+      "fixtures/clamp.c",
+      "-o",
+      "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-local-v1/binaries/upper9-injected"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "upper9-injected-model": {
+    "exit_code": 0,
+    "guard_stop": null,
+    "peak_process_tree_rss_bytes": 1608155136,
+    "elapsed_seconds": 4.613238709047437,
+    "system_swap_growth_bytes": 0,
+    "log": "upper9-injected-model.log"
+  },
+  "upper10-clean-compile": {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/clang",
+      "-isysroot",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-O2",
+      "-DCLEANNOTE",
+      "fixtures/clamp.c",
+      "-o",
+      "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-local-v1/binaries/upper10-clean"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "upper10-clean-model": {
+    "exit_code": 0,
+    "guard_stop": null,
+    "peak_process_tree_rss_bytes": 1610809344,
+    "elapsed_seconds": 5.149564833147451,
+    "system_swap_growth_bytes": 85655552,
+    "log": "upper10-clean-model.log"
+  },
+  "upper10-injected-compile": {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/clang",
+      "-isysroot",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-O2",
+      "fixtures/clamp.c",
+      "-o",
+      "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-local-v1/binaries/upper10-injected"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "upper10-injected-model": {
+    "exit_code": 0,
+    "guard_stop": null,
+    "peak_process_tree_rss_bytes": 1608253440,
+    "elapsed_seconds": 4.612217666115612,
+    "system_swap_growth_bytes": 0,
+    "log": "upper10-injected-model.log"
+  }
+}
