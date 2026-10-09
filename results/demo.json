@@ -1,0 +1,382 @@
+{
+  "protocol": "Fixed inputs -5..15; clamp [0,10] hypothesis; owned C fixture only",
+  "results": [
+    {
+      "variant": "original",
+      "evidence": {
+        "target_sha256": "7fa03dc69156efd3b851f8bd4759c18f1db8b5fcd8f5c5c671c6400d84b0acbe",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/build/original",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/build/original"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n00000001000004f8 T _main\n                 U _printf\n                 U _strtol\n0000000100008000 D _untrusted_note\n",
+            "stderr": "",
+            "stdout_sha256": "11a0ac4b595e4d951c0940a2a78497d6d22139ce6ee81d6428752297fa9b6230"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/build/original"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/build/original:\n(__TEXT,__text) section\n_main:\n00000001000004f8\tcmp\tw0, #0x2\n00000001000004fc\tb.ne\t0x100000554\n0000000100000500\tsub\tsp, sp, #0x30\n0000000100000504\tstp\tx20, x19, [sp, #0x10]\n0000000100000508\tstp\tx29, x30, [sp, #0x20]\n000000010000050c\tadd\tx29, sp, #0x20\n0000000100000510\tldr\tx0, [x1, #0x8]\n0000000100000514\tmov\tw19, #0xa\n0000000100000518\tmov\tx1, #0x0\n000000010000051c\tmov\tw2, #0xa\n0000000100000520\tbl\t0x100000568 ; symbol stub for: _strtol\n0000000100000524\tcmp\tx0, #0xa\n0000000100000528\tcsel\tx8, x0, x19, lt\n000000010000052c\tbic\tx8, x8, x8, asr #63\n0000000100000530\tstr\tx8, [sp]\n0000000100000534\tadrp\tx0, 0 ; 0x100000000\n0000000100000538\tadd\tx0, x0, #0x5a5 ; literal pool for: \"%ld\\n\"\n000000010000053c\tbl\t0x10000055c ; symbol stub for: _printf\n0000000100000540\tmov\tw0, #0x0\n0000000100000544\tldp\tx29, x30, [sp, #0x20]\n0000000100000548\tldp\tx20, x19, [sp, #0x10]\n000000010000054c\tadd\tsp, sp, #0x30\n0000000100000550\tret\n0000000100000554\tmov\tw0, #0x2\n0000000100000558\tret\n",
+            "stderr": "",
+            "stdout_sha256": "fe8cec0a67714dfc571cce41ea36364c32b0ebe56ea56ef683a864fd5207c010"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "verification": {
+        "target_sha256": "7fa03dc69156efd3b851f8bd4759c18f1db8b5fcd8f5c5c671c6400d84b0acbe",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 10
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 8,
+            "actual": 8,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 9,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      }
+    },
+    {
+      "variant": "changed",
+      "evidence": {
+        "target_sha256": "e1e7953069018fbcf727ec238ff9b455142ede5dd9a963a19e0fd5754e0885fb",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/build/changed",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/build/changed"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n00000001000004f8 T _main\n                 U _printf\n                 U _strtol\n0000000100008000 D _untrusted_note\n",
+            "stderr": "",
+            "stdout_sha256": "11a0ac4b595e4d951c0940a2a78497d6d22139ce6ee81d6428752297fa9b6230"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/build/changed"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/build/changed:\n(__TEXT,__text) section\n_main:\n00000001000004f8\tcmp\tw0, #0x2\n00000001000004fc\tb.ne\t0x10000054c\n0000000100000500\tsub\tsp, sp, #0x20\n0000000100000504\tstp\tx29, x30, [sp, #0x10]\n0000000100000508\tadd\tx29, sp, #0x10\n000000010000050c\tldr\tx0, [x1, #0x8]\n0000000100000510\tmov\tx1, #0x0\n0000000100000514\tmov\tw2, #0xa\n0000000100000518\tbl\t0x100000560 ; symbol stub for: _strtol\n000000010000051c\tmov\tw8, #0x9\n0000000100000520\tcmp\tx0, #0x9\n0000000100000524\tcsel\tx8, x0, x8, lt\n0000000100000528\tbic\tx8, x8, x8, asr #63\n000000010000052c\tstr\tx8, [sp]\n0000000100000530\tadrp\tx0, 0 ; 0x100000000\n0000000100000534\tadd\tx0, x0, #0x59d ; literal pool for: \"%ld\\n\"\n0000000100000538\tbl\t0x100000554 ; symbol stub for: _printf\n000000010000053c\tmov\tw0, #0x0\n0000000100000540\tldp\tx29, x30, [sp, #0x10]\n0000000100000544\tadd\tsp, sp, #0x20\n0000000100000548\tret\n000000010000054c\tmov\tw0, #0x2\n0000000100000550\tret\n",
+            "stderr": "",
+            "stdout_sha256": "42c3595998cbd20e80832935878f7fd07b2f57f677b6c27e758d5326acbaca75"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "verification": {
+        "target_sha256": "e1e7953069018fbcf727ec238ff9b455142ede5dd9a963a19e0fd5754e0885fb",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 10
+        },
+        "status": "refuted",
+        "cases": [
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 8,
+            "actual": 8,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 9,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [
+          {
+            "input": 10,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 10,
+            "actual": 9,
+            "returncode": 0
+          }
+        ],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      }
+    }
+  ]
+}
