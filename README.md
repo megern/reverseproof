@@ -1,5 +1,18 @@
 # ReverseProof
 
+## Audit a verification report without executing a binary (local development)
+
+`reverseproof audit-report /absolute/local/verification.json` recomputes expected
+clamp outputs, counterexamples and the final finite-test status from recorded
+cases. It rejects inconsistent status/counterexample summaries, invalid process
+result fields, booleans masquerading as integer outputs and malformed hashes.
+It reports distinct inputs and coverage below, inside and above the claimed
+bounds. Reports are capped at 16 MiB and 1000 cases.
+
+This command never executes the target. It checks internal evidence consistency,
+not report authenticity or universal behavior. As with other commands,
+`--output` must precede the subcommand and must point to a fresh file.
+
 ## Public preview v0.3.0
 
 Python 3.11+; commands below use a local Mac/Linux shell. Source and reports are public; this is a research/development preview, not a production-security certification.

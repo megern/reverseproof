@@ -6,13 +6,14 @@ import subprocess
 import sys
 from .core import inventory, verify_owned
 from .patterns import propose
+from .audit import audit_report
 
 
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,help='Save JSON to a fresh path; existing reports are preserved')
     sub=parser.add_subparsers(dest='command',required=True)
-    for command in ('inspect','propose-pattern'):
+    for command in ('inspect','propose-pattern','audit-report'):
         sub.add_parser(command).add_argument('target',type=Path)
     verification=sub.add_parser('verify-owned')
     verification.add_argument('target',type=Path)
@@ -27,6 +28,7 @@ def main(argv=None):
             raise ValueError('Output must be a fresh path distinct from the target')
         if args.command=='inspect': result=inventory(args.target)
         elif args.command=='propose-pattern':result=propose(inventory(args.target))
+        elif args.command=='audit-report':result=audit_report(args.target)
         else:
             if not 0<=args.max_input-args.min_input<1000:
                 raise ValueError('Input range must contain between 1 and 1000 integers')
