@@ -1,5 +1,20 @@
 # ReverseProof
 
+## Public preview v0.3.0
+
+Python 3.11+; commands below use a local Mac/Linux shell. Source and reports are public; this is a research/development preview, not a production-security certification.
+
+```sh
+git clone --branch v0.3.0 https://github.com/megern/reverseproof.git
+cd reverseproof
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install .
+reverseproof --help
+```
+
+The installed entry point was exercised outside the checkout in a separate local environment. This revision has 24 passing local tests. No hosted CI or cloud compute is used. Report an issue with the command, Python/OS versions, sanitized input and expected/actual behavior; remove credentials and private records first. Benchmarks describe the supplied fixtures and hardware.
+
 A local, evidence-bound prototype for testing reverse-engineering hypotheses, by Megern Qaisse.
 
 The current prototype combines **original BF16 Qwen3-0.6B running offline**, macOS ARM64 disassembly, a strict proposal boundary and an independent behavioral verifier. A model's explanation is never automatically treated as a verified result.
@@ -62,3 +77,15 @@ python3 -m unittest discover -s tests
 ```
 
 The study freezes source and signature-rule hashes before compiling eight owned variants: upper bounds 7/23 with O0/O1/O2/Os. It retains abstentions and verifies proposed clamps on 131 bounded inputs. Exported protocol and report are in `results/compiler-coverage-20261011/`; compiled executables stay local. In this run, six variants produced hypotheses supported on all 131 tested inputs; both O0 variants caused abstention. These are related toy cases, not a real-application benchmark or an LLM quality result. Earlier model failures remain visible.
+
+
+### Negative controls and CLI outcomes
+
+```sh
+python3 run_coverage_study.py --include-negatives --output /tmp/reverseproof-fresh-robustness
+reverseproof --output /tmp/owned-inspection.json inspect build/original
+```
+
+The twelve-cell robustness study adds four affine negative controls to the eight alternate-source clamp/compiler variants. The frozen rules produce six supported clamp hypotheses on 131 inputs each, abstain on both O0 clamp variants, and abstain on all four affine controls. Complete disassembly evidence and source hashes are retained in `results/robustness-20261011/`. These related toy fixtures do not establish general decompilation accuracy; no local language model was evaluated in this study.
+
+The CLI accepts lower/upper bounds and bounded input ranges, preserves existing output files, and returns 1 for a refuted claim or 2 for an input/tool error. Inspection and pattern proposals do not execute the target. Execution still requires approval bound to the exact owned-fixture hash.

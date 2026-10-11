@@ -1,0 +1,5732 @@
+{
+  "protocol_sha256": "e3a615a4273e9ee1de124fa069bc5b76f5f61cb11dccfef581450c16ac24a3f2",
+  "results": [
+    {
+      "cell": {
+        "id": "upper7-O0",
+        "upper": 7,
+        "optimization": "O0"
+      },
+      "target_sha256": "5796ed053200b7bc8e4765367d0e999320adef7a9167295145bd295391363246",
+      "proposal": {
+        "status": "abstained",
+        "reason": "No supported exact instruction signature"
+      },
+      "verification": null,
+      "evidence": {
+        "target_sha256": "5796ed053200b7bc8e4765367d0e999320adef7a9167295145bd295391363246",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O0",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O0"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O0"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O0:\n(__TEXT,__text) section\n_main:\n0000000100000460\tsub\tsp, sp, #0x40\n0000000100000464\tstp\tx29, x30, [sp, #0x30]\n0000000100000468\tadd\tx29, sp, #0x30\n000000010000046c\tstur\twzr, [x29, #-0x4]\n0000000100000470\tstur\tw0, [x29, #-0x8]\n0000000100000474\tstur\tx1, [x29, #-0x10]\n0000000100000478\tldur\tw8, [x29, #-0x8]\n000000010000047c\tsubs\tw8, w8, #0x2\n0000000100000480\tb.eq\t0x100000494\n0000000100000484\tb\t0x100000488\n0000000100000488\tmov\tw8, #0x2\n000000010000048c\tstur\tw8, [x29, #-0x4]\n0000000100000490\tb\t0x100000504\n0000000100000494\tldur\tx8, [x29, #-0x10]\n0000000100000498\tldr\tx0, [x8, #0x8]\n000000010000049c\tmov\tx1, #0x0\n00000001000004a0\tmov\tw2, #0xa\n00000001000004a4\tbl\t0x100000514 ; symbol stub for: _strtol\n00000001000004a8\tstr\tx0, [sp, #0x18]\n00000001000004ac\tldr\tx8, [sp, #0x18]\n00000001000004b0\tstr\tx8, [sp, #0x10]\n00000001000004b4\tldr\tx8, [sp, #0x10]\n00000001000004b8\tsubs\tx8, x8, #0x7\n00000001000004bc\tb.le\t0x1000004d0\n00000001000004c0\tb\t0x1000004c4\n00000001000004c4\tmov\tx8, #0x7\n00000001000004c8\tstr\tx8, [sp, #0x10]\n00000001000004cc\tb\t0x1000004d0\n00000001000004d0\tldr\tx8, [sp, #0x10]\n00000001000004d4\ttbz\tx8, #0x3f, 0x1000004e4\n00000001000004d8\tb\t0x1000004dc\n00000001000004dc\tstr\txzr, [sp, #0x10]\n00000001000004e0\tb\t0x1000004e4\n00000001000004e4\tldr\tx8, [sp, #0x10]\n00000001000004e8\tmov\tx9, sp\n00000001000004ec\tstr\tx8, [x9]\n00000001000004f0\tadrp\tx0, 0 ; 0x100000000\n00000001000004f4\tadd\tx0, x0, #0x52c ; literal pool for: \"%ld\\n\"\n00000001000004f8\tbl\t0x100000520 ; symbol stub for: _printf\n00000001000004fc\tstur\twzr, [x29, #-0x4]\n0000000100000500\tb\t0x100000504\n0000000100000504\tldur\tw0, [x29, #-0x4]\n0000000100000508\tldp\tx29, x30, [sp, #0x30]\n000000010000050c\tadd\tsp, sp, #0x40\n0000000100000510\tret\n",
+            "stderr": "",
+            "stdout_sha256": "19a8d90c4473a1a874cc49454000d231b295220961e8518ee741873358feb3aa"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O0"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O0:\nContents of (__TEXT,__cstring) section\n000000010000052c  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "d6f934c3e94841f311dc5c93f41963d69357f22464e892e277009f8d602b0fd1"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-O0",
+        "-DUPPER=7",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O0"
+      ]
+    },
+    {
+      "cell": {
+        "id": "upper7-O1",
+        "upper": 7,
+        "optimization": "O1"
+      },
+      "target_sha256": "2d743b8b0f5e310130197a004c5e0c07e40e12f6e5bf65746ad91a52d1ad9cb8",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 7
+          },
+          "target_sha256": "2d743b8b0f5e310130197a004c5e0c07e40e12f6e5bf65746ad91a52d1ad9cb8",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "2d743b8b0f5e310130197a004c5e0c07e40e12f6e5bf65746ad91a52d1ad9cb8",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 7
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      },
+      "evidence": {
+        "target_sha256": "2d743b8b0f5e310130197a004c5e0c07e40e12f6e5bf65746ad91a52d1ad9cb8",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O1",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O1"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O1"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O1:\n(__TEXT,__text) section\n_main:\n0000000100000460\tcmp\tw0, #0x2\n0000000100000464\tb.ne\t0x1000004b4\n0000000100000468\tsub\tsp, sp, #0x20\n000000010000046c\tstp\tx29, x30, [sp, #0x10]\n0000000100000470\tadd\tx29, sp, #0x10\n0000000100000474\tldr\tx0, [x1, #0x8]\n0000000100000478\tmov\tx1, #0x0\n000000010000047c\tmov\tw2, #0xa\n0000000100000480\tbl\t0x1000004c8 ; symbol stub for: _strtol\n0000000100000484\tmov\tw8, #0x7\n0000000100000488\tcmp\tx0, #0x7\n000000010000048c\tcsel\tx8, x0, x8, lt\n0000000100000490\tbic\tx8, x8, x8, asr #63\n0000000100000494\tstr\tx8, [sp]\n0000000100000498\tadrp\tx0, 0 ; 0x100000000\n000000010000049c\tadd\tx0, x0, #0x4d4 ; literal pool for: \"%ld\\n\"\n00000001000004a0\tbl\t0x1000004bc ; symbol stub for: _printf\n00000001000004a4\tmov\tw0, #0x0\n00000001000004a8\tldp\tx29, x30, [sp, #0x10]\n00000001000004ac\tadd\tsp, sp, #0x20\n00000001000004b0\tret\n00000001000004b4\tmov\tw0, #0x2\n00000001000004b8\tret\n",
+            "stderr": "",
+            "stdout_sha256": "1de97b5c3176523d56cc5a18a27cdf5aeda15ce3de7362e9d35eae259539d73a"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O1"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O1:\nContents of (__TEXT,__cstring) section\n00000001000004d4  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "7812cf56271493247c57ba0573a5d05e87403a1df9ffa9c94ece127c22509f59"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-O1",
+        "-DUPPER=7",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O1"
+      ]
+    },
+    {
+      "cell": {
+        "id": "upper7-O2",
+        "upper": 7,
+        "optimization": "O2"
+      },
+      "target_sha256": "905c9267e878438e5341a321611b7d436b14eb16fd4b93badc8f8395946808d0",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 7
+          },
+          "target_sha256": "905c9267e878438e5341a321611b7d436b14eb16fd4b93badc8f8395946808d0",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "905c9267e878438e5341a321611b7d436b14eb16fd4b93badc8f8395946808d0",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 7
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      },
+      "evidence": {
+        "target_sha256": "905c9267e878438e5341a321611b7d436b14eb16fd4b93badc8f8395946808d0",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O2",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O2"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O2"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O2:\n(__TEXT,__text) section\n_main:\n0000000100000460\tcmp\tw0, #0x2\n0000000100000464\tb.ne\t0x1000004b4\n0000000100000468\tsub\tsp, sp, #0x20\n000000010000046c\tstp\tx29, x30, [sp, #0x10]\n0000000100000470\tadd\tx29, sp, #0x10\n0000000100000474\tldr\tx0, [x1, #0x8]\n0000000100000478\tmov\tx1, #0x0\n000000010000047c\tmov\tw2, #0xa\n0000000100000480\tbl\t0x1000004c8 ; symbol stub for: _strtol\n0000000100000484\tmov\tw8, #0x7\n0000000100000488\tcmp\tx0, #0x7\n000000010000048c\tcsel\tx8, x0, x8, lt\n0000000100000490\tbic\tx8, x8, x8, asr #63\n0000000100000494\tstr\tx8, [sp]\n0000000100000498\tadrp\tx0, 0 ; 0x100000000\n000000010000049c\tadd\tx0, x0, #0x4d4 ; literal pool for: \"%ld\\n\"\n00000001000004a0\tbl\t0x1000004bc ; symbol stub for: _printf\n00000001000004a4\tmov\tw0, #0x0\n00000001000004a8\tldp\tx29, x30, [sp, #0x10]\n00000001000004ac\tadd\tsp, sp, #0x20\n00000001000004b0\tret\n00000001000004b4\tmov\tw0, #0x2\n00000001000004b8\tret\n",
+            "stderr": "",
+            "stdout_sha256": "915efca2ecfba1eb5007920462bd083701863d81f801abed660d6a818c4973fb"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O2"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O2:\nContents of (__TEXT,__cstring) section\n00000001000004d4  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "f5c5ba835dd84f493f58462bd3b0eb07e8e902c7895481a48af3d08ba4e5df89"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-O2",
+        "-DUPPER=7",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-O2"
+      ]
+    },
+    {
+      "cell": {
+        "id": "upper7-Os",
+        "upper": 7,
+        "optimization": "Os"
+      },
+      "target_sha256": "94b0d7aabc586fa8ed6e17d0f9d2380c206aa26c902c78510b9fc601f14c1c17",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 7
+          },
+          "target_sha256": "94b0d7aabc586fa8ed6e17d0f9d2380c206aa26c902c78510b9fc601f14c1c17",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "94b0d7aabc586fa8ed6e17d0f9d2380c206aa26c902c78510b9fc601f14c1c17",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 7
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      },
+      "evidence": {
+        "target_sha256": "94b0d7aabc586fa8ed6e17d0f9d2380c206aa26c902c78510b9fc601f14c1c17",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-Os",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-Os"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-Os"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-Os:\n(__TEXT,__text) section\n_main:\n0000000100000460\tcmp\tw0, #0x2\n0000000100000464\tb.ne\t0x1000004b4\n0000000100000468\tsub\tsp, sp, #0x20\n000000010000046c\tstp\tx29, x30, [sp, #0x10]\n0000000100000470\tadd\tx29, sp, #0x10\n0000000100000474\tldr\tx0, [x1, #0x8]\n0000000100000478\tmov\tx1, #0x0\n000000010000047c\tmov\tw2, #0xa\n0000000100000480\tbl\t0x1000004c8 ; symbol stub for: _strtol\n0000000100000484\tmov\tw8, #0x7\n0000000100000488\tcmp\tx0, #0x7\n000000010000048c\tcsel\tx8, x0, x8, lt\n0000000100000490\tbic\tx8, x8, x8, asr #63\n0000000100000494\tstr\tx8, [sp]\n0000000100000498\tadrp\tx0, 0 ; 0x100000000\n000000010000049c\tadd\tx0, x0, #0x4d4 ; literal pool for: \"%ld\\n\"\n00000001000004a0\tbl\t0x1000004bc ; symbol stub for: _printf\n00000001000004a4\tmov\tw0, #0x0\n00000001000004a8\tldp\tx29, x30, [sp, #0x10]\n00000001000004ac\tadd\tsp, sp, #0x20\n00000001000004b0\tret\n00000001000004b4\tmov\tw0, #0x2\n00000001000004b8\tret\n",
+            "stderr": "",
+            "stdout_sha256": "438b75d47abb828a72dd2fd9d50917e2ced60786dd99dc6986c681209d26d739"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-Os"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-Os:\nContents of (__TEXT,__cstring) section\n00000001000004d4  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "2f8c5a3745ce0295b50aa2e561debc50be2e94d348bd0154c7e912fbf39f7ceb"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Os",
+        "-DUPPER=7",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper7-Os"
+      ]
+    },
+    {
+      "cell": {
+        "id": "upper23-O0",
+        "upper": 23,
+        "optimization": "O0"
+      },
+      "target_sha256": "c94c556e95008dffb39f3fd93ab273f4798ce23f3606a20800e45133c677199b",
+      "proposal": {
+        "status": "abstained",
+        "reason": "No supported exact instruction signature"
+      },
+      "verification": null,
+      "evidence": {
+        "target_sha256": "c94c556e95008dffb39f3fd93ab273f4798ce23f3606a20800e45133c677199b",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O0",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O0"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O0"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O0:\n(__TEXT,__text) section\n_main:\n0000000100000460\tsub\tsp, sp, #0x40\n0000000100000464\tstp\tx29, x30, [sp, #0x30]\n0000000100000468\tadd\tx29, sp, #0x30\n000000010000046c\tstur\twzr, [x29, #-0x4]\n0000000100000470\tstur\tw0, [x29, #-0x8]\n0000000100000474\tstur\tx1, [x29, #-0x10]\n0000000100000478\tldur\tw8, [x29, #-0x8]\n000000010000047c\tsubs\tw8, w8, #0x2\n0000000100000480\tb.eq\t0x100000494\n0000000100000484\tb\t0x100000488\n0000000100000488\tmov\tw8, #0x2\n000000010000048c\tstur\tw8, [x29, #-0x4]\n0000000100000490\tb\t0x100000504\n0000000100000494\tldur\tx8, [x29, #-0x10]\n0000000100000498\tldr\tx0, [x8, #0x8]\n000000010000049c\tmov\tx1, #0x0\n00000001000004a0\tmov\tw2, #0xa\n00000001000004a4\tbl\t0x100000514 ; symbol stub for: _strtol\n00000001000004a8\tstr\tx0, [sp, #0x18]\n00000001000004ac\tldr\tx8, [sp, #0x18]\n00000001000004b0\tstr\tx8, [sp, #0x10]\n00000001000004b4\tldr\tx8, [sp, #0x10]\n00000001000004b8\tsubs\tx8, x8, #0x17\n00000001000004bc\tb.le\t0x1000004d0\n00000001000004c0\tb\t0x1000004c4\n00000001000004c4\tmov\tx8, #0x17\n00000001000004c8\tstr\tx8, [sp, #0x10]\n00000001000004cc\tb\t0x1000004d0\n00000001000004d0\tldr\tx8, [sp, #0x10]\n00000001000004d4\ttbz\tx8, #0x3f, 0x1000004e4\n00000001000004d8\tb\t0x1000004dc\n00000001000004dc\tstr\txzr, [sp, #0x10]\n00000001000004e0\tb\t0x1000004e4\n00000001000004e4\tldr\tx8, [sp, #0x10]\n00000001000004e8\tmov\tx9, sp\n00000001000004ec\tstr\tx8, [x9]\n00000001000004f0\tadrp\tx0, 0 ; 0x100000000\n00000001000004f4\tadd\tx0, x0, #0x52c ; literal pool for: \"%ld\\n\"\n00000001000004f8\tbl\t0x100000520 ; symbol stub for: _printf\n00000001000004fc\tstur\twzr, [x29, #-0x4]\n0000000100000500\tb\t0x100000504\n0000000100000504\tldur\tw0, [x29, #-0x4]\n0000000100000508\tldp\tx29, x30, [sp, #0x30]\n000000010000050c\tadd\tsp, sp, #0x40\n0000000100000510\tret\n",
+            "stderr": "",
+            "stdout_sha256": "b8f386796cb0e2a607efa64afb3ff339ba255672ca5a97764ca6dac30ac59c68"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O0"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O0:\nContents of (__TEXT,__cstring) section\n000000010000052c  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "9141eab29dd37dc03b8fdc17d7a7b3f119a073344d4cb45ff5bb037860f30f48"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-O0",
+        "-DUPPER=23",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O0"
+      ]
+    },
+    {
+      "cell": {
+        "id": "upper23-O1",
+        "upper": 23,
+        "optimization": "O1"
+      },
+      "target_sha256": "be1cc5176667689fc7522fdbf045bb4103a42ea6113808357e50f3277afbe7f5",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 23
+          },
+          "target_sha256": "be1cc5176667689fc7522fdbf045bb4103a42ea6113808357e50f3277afbe7f5",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "be1cc5176667689fc7522fdbf045bb4103a42ea6113808357e50f3277afbe7f5",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 23
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 8,
+            "actual": 8,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 9,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 11,
+            "actual": 11,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 12,
+            "actual": 12,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 13,
+            "actual": 13,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 14,
+            "actual": 14,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 15,
+            "actual": 15,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 16,
+            "actual": 16,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 17,
+            "actual": 17,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 18,
+            "actual": 18,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 19,
+            "actual": 19,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 20,
+            "actual": 20,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 21,
+            "actual": 21,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 22,
+            "actual": 22,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      },
+      "evidence": {
+        "target_sha256": "be1cc5176667689fc7522fdbf045bb4103a42ea6113808357e50f3277afbe7f5",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O1",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O1"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O1"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O1:\n(__TEXT,__text) section\n_main:\n0000000100000460\tcmp\tw0, #0x2\n0000000100000464\tb.ne\t0x1000004b4\n0000000100000468\tsub\tsp, sp, #0x20\n000000010000046c\tstp\tx29, x30, [sp, #0x10]\n0000000100000470\tadd\tx29, sp, #0x10\n0000000100000474\tldr\tx0, [x1, #0x8]\n0000000100000478\tmov\tx1, #0x0\n000000010000047c\tmov\tw2, #0xa\n0000000100000480\tbl\t0x1000004c8 ; symbol stub for: _strtol\n0000000100000484\tmov\tw8, #0x17\n0000000100000488\tcmp\tx0, #0x17\n000000010000048c\tcsel\tx8, x0, x8, lt\n0000000100000490\tbic\tx8, x8, x8, asr #63\n0000000100000494\tstr\tx8, [sp]\n0000000100000498\tadrp\tx0, 0 ; 0x100000000\n000000010000049c\tadd\tx0, x0, #0x4d4 ; literal pool for: \"%ld\\n\"\n00000001000004a0\tbl\t0x1000004bc ; symbol stub for: _printf\n00000001000004a4\tmov\tw0, #0x0\n00000001000004a8\tldp\tx29, x30, [sp, #0x10]\n00000001000004ac\tadd\tsp, sp, #0x20\n00000001000004b0\tret\n00000001000004b4\tmov\tw0, #0x2\n00000001000004b8\tret\n",
+            "stderr": "",
+            "stdout_sha256": "4b490479b255c744146e5b8c38ed94efd57f4baa8eb60a20fbbeb51071d5c0a7"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O1"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O1:\nContents of (__TEXT,__cstring) section\n00000001000004d4  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "7d0a36eacef12d695049669d3b685266238f1a1dc70b343f57c53a602e35d839"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-O1",
+        "-DUPPER=23",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O1"
+      ]
+    },
+    {
+      "cell": {
+        "id": "upper23-O2",
+        "upper": 23,
+        "optimization": "O2"
+      },
+      "target_sha256": "187b073f0810eba1f68b3065d49b8f39154ddb272a6bdb7ba5ab4f47f4a094c8",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 23
+          },
+          "target_sha256": "187b073f0810eba1f68b3065d49b8f39154ddb272a6bdb7ba5ab4f47f4a094c8",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "187b073f0810eba1f68b3065d49b8f39154ddb272a6bdb7ba5ab4f47f4a094c8",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 23
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 8,
+            "actual": 8,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 9,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 11,
+            "actual": 11,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 12,
+            "actual": 12,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 13,
+            "actual": 13,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 14,
+            "actual": 14,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 15,
+            "actual": 15,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 16,
+            "actual": 16,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 17,
+            "actual": 17,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 18,
+            "actual": 18,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 19,
+            "actual": 19,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 20,
+            "actual": 20,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 21,
+            "actual": 21,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 22,
+            "actual": 22,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      },
+      "evidence": {
+        "target_sha256": "187b073f0810eba1f68b3065d49b8f39154ddb272a6bdb7ba5ab4f47f4a094c8",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O2",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O2"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O2"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O2:\n(__TEXT,__text) section\n_main:\n0000000100000460\tcmp\tw0, #0x2\n0000000100000464\tb.ne\t0x1000004b4\n0000000100000468\tsub\tsp, sp, #0x20\n000000010000046c\tstp\tx29, x30, [sp, #0x10]\n0000000100000470\tadd\tx29, sp, #0x10\n0000000100000474\tldr\tx0, [x1, #0x8]\n0000000100000478\tmov\tx1, #0x0\n000000010000047c\tmov\tw2, #0xa\n0000000100000480\tbl\t0x1000004c8 ; symbol stub for: _strtol\n0000000100000484\tmov\tw8, #0x17\n0000000100000488\tcmp\tx0, #0x17\n000000010000048c\tcsel\tx8, x0, x8, lt\n0000000100000490\tbic\tx8, x8, x8, asr #63\n0000000100000494\tstr\tx8, [sp]\n0000000100000498\tadrp\tx0, 0 ; 0x100000000\n000000010000049c\tadd\tx0, x0, #0x4d4 ; literal pool for: \"%ld\\n\"\n00000001000004a0\tbl\t0x1000004bc ; symbol stub for: _printf\n00000001000004a4\tmov\tw0, #0x0\n00000001000004a8\tldp\tx29, x30, [sp, #0x10]\n00000001000004ac\tadd\tsp, sp, #0x20\n00000001000004b0\tret\n00000001000004b4\tmov\tw0, #0x2\n00000001000004b8\tret\n",
+            "stderr": "",
+            "stdout_sha256": "f7bd19c52382280f04d9f2485bd84088eb8cdb77c190654b1272bac65275b3f1"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O2"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O2:\nContents of (__TEXT,__cstring) section\n00000001000004d4  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "a37b383f808701e9a791669b0916073dd20031caaf1ae3e9e6c27014c7429258"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-O2",
+        "-DUPPER=23",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-O2"
+      ]
+    },
+    {
+      "cell": {
+        "id": "upper23-Os",
+        "upper": 23,
+        "optimization": "Os"
+      },
+      "target_sha256": "f462b5113f036446ef552e37b4ac8da8367401780f5041198a88c71b7ec3b315",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 23
+          },
+          "target_sha256": "f462b5113f036446ef552e37b4ac8da8367401780f5041198a88c71b7ec3b315",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "f462b5113f036446ef552e37b4ac8da8367401780f5041198a88c71b7ec3b315",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 23
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 8,
+            "actual": 8,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 9,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 11,
+            "actual": 11,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 12,
+            "actual": 12,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 13,
+            "actual": 13,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 14,
+            "actual": 14,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 15,
+            "actual": 15,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 16,
+            "actual": 16,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 17,
+            "actual": 17,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 18,
+            "actual": 18,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 19,
+            "actual": 19,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 20,
+            "actual": 20,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 21,
+            "actual": 21,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 22,
+            "actual": 22,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      },
+      "evidence": {
+        "target_sha256": "f462b5113f036446ef552e37b4ac8da8367401780f5041198a88c71b7ec3b315",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-Os",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-Os"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-Os"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-Os:\n(__TEXT,__text) section\n_main:\n0000000100000460\tcmp\tw0, #0x2\n0000000100000464\tb.ne\t0x1000004b4\n0000000100000468\tsub\tsp, sp, #0x20\n000000010000046c\tstp\tx29, x30, [sp, #0x10]\n0000000100000470\tadd\tx29, sp, #0x10\n0000000100000474\tldr\tx0, [x1, #0x8]\n0000000100000478\tmov\tx1, #0x0\n000000010000047c\tmov\tw2, #0xa\n0000000100000480\tbl\t0x1000004c8 ; symbol stub for: _strtol\n0000000100000484\tmov\tw8, #0x17\n0000000100000488\tcmp\tx0, #0x17\n000000010000048c\tcsel\tx8, x0, x8, lt\n0000000100000490\tbic\tx8, x8, x8, asr #63\n0000000100000494\tstr\tx8, [sp]\n0000000100000498\tadrp\tx0, 0 ; 0x100000000\n000000010000049c\tadd\tx0, x0, #0x4d4 ; literal pool for: \"%ld\\n\"\n00000001000004a0\tbl\t0x1000004bc ; symbol stub for: _printf\n00000001000004a4\tmov\tw0, #0x0\n00000001000004a8\tldp\tx29, x30, [sp, #0x10]\n00000001000004ac\tadd\tsp, sp, #0x20\n00000001000004b0\tret\n00000001000004b4\tmov\tw0, #0x2\n00000001000004b8\tret\n",
+            "stderr": "",
+            "stdout_sha256": "c2c98f81a83c3fe0bfc1affa5ee93d263641d7066fcbf84c348590e710040c2a"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-Os"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-Os:\nContents of (__TEXT,__cstring) section\n00000001000004d4  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "055fc293d8a308eccf8d66e0ebf768e5dc3a436654cd97f01d93bf8a66b6afec"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Os",
+        "-DUPPER=23",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/upper23-Os"
+      ]
+    },
+    {
+      "cell": {
+        "id": "affine-O0",
+        "upper": null,
+        "optimization": "O0"
+      },
+      "target_sha256": "7aba07eb431cadff712627c9e8f564770f0b850f99e3d6c59cec3444f7d94208",
+      "proposal": {
+        "status": "abstained",
+        "reason": "No supported exact instruction signature"
+      },
+      "verification": null,
+      "evidence": {
+        "target_sha256": "7aba07eb431cadff712627c9e8f564770f0b850f99e3d6c59cec3444f7d94208",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O0",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O0"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O0"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O0:\n(__TEXT,__text) section\n_main:\n0000000100000460\tsub\tsp, sp, #0x40\n0000000100000464\tstp\tx29, x30, [sp, #0x30]\n0000000100000468\tadd\tx29, sp, #0x30\n000000010000046c\tstur\twzr, [x29, #-0x4]\n0000000100000470\tstur\tw0, [x29, #-0x8]\n0000000100000474\tstur\tx1, [x29, #-0x10]\n0000000100000478\tldur\tw8, [x29, #-0x8]\n000000010000047c\tsubs\tw8, w8, #0x2\n0000000100000480\tb.eq\t0x100000494\n0000000100000484\tb\t0x100000488\n0000000100000488\tmov\tw8, #0x2\n000000010000048c\tstur\tw8, [x29, #-0x4]\n0000000100000490\tb\t0x1000004d8\n0000000100000494\tldur\tx8, [x29, #-0x10]\n0000000100000498\tldr\tx0, [x8, #0x8]\n000000010000049c\tmov\tx1, #0x0\n00000001000004a0\tmov\tw2, #0xa\n00000001000004a4\tbl\t0x1000004e8 ; symbol stub for: _strtol\n00000001000004a8\tstr\tx0, [sp, #0x18]\n00000001000004ac\tldr\tx8, [sp, #0x18]\n00000001000004b0\tadd\tx8, x8, #0x1\n00000001000004b4\tstr\tx8, [sp, #0x10]\n00000001000004b8\tldr\tx8, [sp, #0x10]\n00000001000004bc\tmov\tx9, sp\n00000001000004c0\tstr\tx8, [x9]\n00000001000004c4\tadrp\tx0, 0 ; 0x100000000\n00000001000004c8\tadd\tx0, x0, #0x500 ; literal pool for: \"%ld\\n\"\n00000001000004cc\tbl\t0x1000004f4 ; symbol stub for: _printf\n00000001000004d0\tstur\twzr, [x29, #-0x4]\n00000001000004d4\tb\t0x1000004d8\n00000001000004d8\tldur\tw0, [x29, #-0x4]\n00000001000004dc\tldp\tx29, x30, [sp, #0x30]\n00000001000004e0\tadd\tsp, sp, #0x40\n00000001000004e4\tret\n",
+            "stderr": "",
+            "stdout_sha256": "6ea5591cff08f3449c01b50c87813753f760f59e87cf14aeb69ddcf57b26a99a"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O0"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O0:\nContents of (__TEXT,__cstring) section\n0000000100000500  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "d6d7cb547291077ee33931d5bd22a0201a2f8799b8ff7727084a0668ce7cfb0f"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-O0",
+        "-DAFFINE",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O0"
+      ]
+    },
+    {
+      "cell": {
+        "id": "affine-O1",
+        "upper": null,
+        "optimization": "O1"
+      },
+      "target_sha256": "6022178cbc0b4fc385e8582480f80267daefc9547c85218b784f33ef63c7d11b",
+      "proposal": {
+        "status": "abstained",
+        "reason": "No supported exact instruction signature"
+      },
+      "verification": null,
+      "evidence": {
+        "target_sha256": "6022178cbc0b4fc385e8582480f80267daefc9547c85218b784f33ef63c7d11b",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O1",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O1"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O1"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O1:\n(__TEXT,__text) section\n_main:\n0000000100000460\tcmp\tw0, #0x2\n0000000100000464\tb.ne\t0x1000004a8\n0000000100000468\tsub\tsp, sp, #0x20\n000000010000046c\tstp\tx29, x30, [sp, #0x10]\n0000000100000470\tadd\tx29, sp, #0x10\n0000000100000474\tldr\tx0, [x1, #0x8]\n0000000100000478\tmov\tx1, #0x0\n000000010000047c\tmov\tw2, #0xa\n0000000100000480\tbl\t0x1000004bc ; symbol stub for: _strtol\n0000000100000484\tadd\tx8, x0, #0x1\n0000000100000488\tstr\tx8, [sp]\n000000010000048c\tadrp\tx0, 0 ; 0x100000000\n0000000100000490\tadd\tx0, x0, #0x4c8 ; literal pool for: \"%ld\\n\"\n0000000100000494\tbl\t0x1000004b0 ; symbol stub for: _printf\n0000000100000498\tmov\tw0, #0x0\n000000010000049c\tldp\tx29, x30, [sp, #0x10]\n00000001000004a0\tadd\tsp, sp, #0x20\n00000001000004a4\tret\n00000001000004a8\tmov\tw0, #0x2\n00000001000004ac\tret\n",
+            "stderr": "",
+            "stdout_sha256": "61faa3b5405ba7f113ae30380d9d825d6d3dbfa82f50a1950dfdb8195d8397e2"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O1"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O1:\nContents of (__TEXT,__cstring) section\n00000001000004c8  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "d32cb07d9f3663e4f7d96cb41196425d243e6c0a6b35a29feca089e81920ce40"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-O1",
+        "-DAFFINE",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O1"
+      ]
+    },
+    {
+      "cell": {
+        "id": "affine-O2",
+        "upper": null,
+        "optimization": "O2"
+      },
+      "target_sha256": "61059cfd317a247d31f546c4cf1a1f3394961123de50d567f77bf550b55a5b5b",
+      "proposal": {
+        "status": "abstained",
+        "reason": "No supported exact instruction signature"
+      },
+      "verification": null,
+      "evidence": {
+        "target_sha256": "61059cfd317a247d31f546c4cf1a1f3394961123de50d567f77bf550b55a5b5b",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O2",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O2"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O2"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O2:\n(__TEXT,__text) section\n_main:\n0000000100000460\tcmp\tw0, #0x2\n0000000100000464\tb.ne\t0x1000004a8\n0000000100000468\tsub\tsp, sp, #0x20\n000000010000046c\tstp\tx29, x30, [sp, #0x10]\n0000000100000470\tadd\tx29, sp, #0x10\n0000000100000474\tldr\tx0, [x1, #0x8]\n0000000100000478\tmov\tx1, #0x0\n000000010000047c\tmov\tw2, #0xa\n0000000100000480\tbl\t0x1000004bc ; symbol stub for: _strtol\n0000000100000484\tadd\tx8, x0, #0x1\n0000000100000488\tstr\tx8, [sp]\n000000010000048c\tadrp\tx0, 0 ; 0x100000000\n0000000100000490\tadd\tx0, x0, #0x4c8 ; literal pool for: \"%ld\\n\"\n0000000100000494\tbl\t0x1000004b0 ; symbol stub for: _printf\n0000000100000498\tmov\tw0, #0x0\n000000010000049c\tldp\tx29, x30, [sp, #0x10]\n00000001000004a0\tadd\tsp, sp, #0x20\n00000001000004a4\tret\n00000001000004a8\tmov\tw0, #0x2\n00000001000004ac\tret\n",
+            "stderr": "",
+            "stdout_sha256": "d6e66d34ce654b4f2f642a8ff1279735c52871986e83c694639190843429a7e5"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O2"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O2:\nContents of (__TEXT,__cstring) section\n00000001000004c8  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "d6b1ef4f92f05b9ad0b042947f3b0b2c01f348cccf6680b69ab43abd1428efbd"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-O2",
+        "-DAFFINE",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-O2"
+      ]
+    },
+    {
+      "cell": {
+        "id": "affine-Os",
+        "upper": null,
+        "optimization": "Os"
+      },
+      "target_sha256": "295a792e7387761738ff6f5079850e39691b80760154fa23c566af6db3dc9246",
+      "proposal": {
+        "status": "abstained",
+        "reason": "No supported exact instruction signature"
+      },
+      "verification": null,
+      "evidence": {
+        "target_sha256": "295a792e7387761738ff6f5079850e39691b80760154fa23c566af6db3dc9246",
+        "target": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-Os",
+        "tools": [
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/nm",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-Os"
+            ],
+            "returncode": 0,
+            "stdout": "0000000100000000 T __mh_execute_header\n0000000100000460 T _main\n                 U _printf\n                 U _strtol\n",
+            "stderr": "",
+            "stdout_sha256": "d4dc29c8ca78cde13d4e1806d1e4859fdd6b56663a221a620528cd8a061a7483"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-tvV",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-Os"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-Os:\n(__TEXT,__text) section\n_main:\n0000000100000460\tcmp\tw0, #0x2\n0000000100000464\tb.ne\t0x1000004a8\n0000000100000468\tsub\tsp, sp, #0x20\n000000010000046c\tstp\tx29, x30, [sp, #0x10]\n0000000100000470\tadd\tx29, sp, #0x10\n0000000100000474\tldr\tx0, [x1, #0x8]\n0000000100000478\tmov\tx1, #0x0\n000000010000047c\tmov\tw2, #0xa\n0000000100000480\tbl\t0x1000004bc ; symbol stub for: _strtol\n0000000100000484\tadd\tx8, x0, #0x1\n0000000100000488\tstr\tx8, [sp]\n000000010000048c\tadrp\tx0, 0 ; 0x100000000\n0000000100000490\tadd\tx0, x0, #0x4c8 ; literal pool for: \"%ld\\n\"\n0000000100000494\tbl\t0x1000004b0 ; symbol stub for: _printf\n0000000100000498\tmov\tw0, #0x0\n000000010000049c\tldp\tx29, x30, [sp, #0x10]\n00000001000004a0\tadd\tsp, sp, #0x20\n00000001000004a4\tret\n00000001000004a8\tmov\tw0, #0x2\n00000001000004ac\tret\n",
+            "stderr": "",
+            "stdout_sha256": "fcaa4c5f86950eaf6b76c76edb42a8d5b7a69d85b76f9c557b9ca49c47255dc9"
+          },
+          {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/otool",
+              "-v",
+              "-s",
+              "__TEXT",
+              "__cstring",
+              "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-Os"
+            ],
+            "returncode": 0,
+            "stdout": "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-Os:\nContents of (__TEXT,__cstring) section\n00000001000004c8  %ld\\n\n",
+            "stderr": "",
+            "stdout_sha256": "839894e91568b1de319974008f4bf5d2ceac06a889308c9843325b9c232c24de"
+          }
+        ],
+        "trust": "Target contents and tool outputs are untrusted evidence, not instructions"
+      },
+      "compile_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/clang",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Os",
+        "-DAFFINE",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/outputs/reverseproof/fixtures/alternate_clamp.c",
+        "-o",
+        "/Users/a2/Documents/Codex/2026-10-07/new-chat/work/runs/reverseproof-robustness-20261011/binaries/affine-Os"
+      ]
+    }
+  ],
+  "abstained": 6,
+  "supported_on_tested_inputs": 6,
+  "scope": "Related owned synthetic compiler variants; optional affine negatives. Frozen signature rules; abstentions retained. No LLM evaluation, real-app coverage or universal proof."
+}
