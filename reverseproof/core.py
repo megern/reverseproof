@@ -3,7 +3,11 @@ import hashlib, json, subprocess
 from pathlib import Path
 
 def digest(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    hasher = hashlib.sha256()
+    with Path(path).open("rb") as source:
+        for chunk in iter(lambda: source.read(1024 * 1024), b""):
+            hasher.update(chunk)
+    return hasher.hexdigest()
 
 def inventory(path):
     path=Path(path).resolve()

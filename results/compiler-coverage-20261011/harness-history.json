@@ -1,0 +1,14 @@
+{
+  "initial_attempt": {
+    "directory": "work/runs/reverseproof-coverage-20261011",
+    "outcome": "stopped on harness KeyError before completing coverage",
+    "cause": "The runner looked for claim at the top level rather than proposal.claim.",
+    "completed_report": false
+  },
+  "corrected_attempt": {
+    "directory": "work/runs/reverseproof-coverage-20261011-v2",
+    "outcome": "eight planned cells completed",
+    "change": "Corrected report field access; signature rules and fixture source were unchanged.",
+    "scope": "Harness repair, not model or rule tuning after results. Initial local artifacts retained."
+  }
+}

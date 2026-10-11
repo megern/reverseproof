@@ -51,3 +51,14 @@ Embedded misleading strings are treated as untrusted data. Strict-schema tests a
 Next: source-separated blind fixtures, negative functions outside the supported schema, held-out compiler settings, independent oracles, model abstention and counterexample metrics, and comparisons with established tools. Preserve failed interpretations and partial jobs. No LinkedIn publication before the owner's review.
 
 Related work: [REA](https://github.com/morluto/rea) already provides agent-assisted reverse engineering; [reverse-agent injection preprint](https://arxiv.org/abs/2605.30667) motivates distrust of target strings. This repository claims no superiority over those projects.
+
+## Bounded hashing and alternate compiler coverage
+
+Large target/model files are hashed with a 1 MiB streaming buffer instead of a whole-file Python allocation. Hash values and target binding semantics are unchanged; this is a buffer bound, not a measured total RAM reduction.
+
+```sh
+python3 run_coverage_study.py --output /tmp/reverseproof-coverage-new
+python3 -m unittest discover -s tests
+```
+
+The study freezes source and signature-rule hashes before compiling eight owned variants: upper bounds 7/23 with O0/O1/O2/Os. It retains abstentions and verifies proposed clamps on 131 bounded inputs. Exported protocol and report are in `results/compiler-coverage-20261011/`; compiled executables stay local. In this run, six variants produced hypotheses supported on all 131 tested inputs; both O0 variants caused abstention. These are related toy cases, not a real-application benchmark or an LLM quality result. Earlier model failures remain visible.

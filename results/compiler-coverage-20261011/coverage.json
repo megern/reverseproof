@@ -1,0 +1,5056 @@
+{
+  "protocol_sha256": "e4994d39310df0757c1ff33084c9d07ff39eb87a56091c550eb070f3e7d58a58",
+  "results": [
+    {
+      "cell": {
+        "id": "upper7-O0",
+        "upper": 7,
+        "optimization": "O0"
+      },
+      "target_sha256": "d4a35e590b5fbc17269b8d7cd9a8bcd611f37da5fae471f161dc1d7c9a85ee16",
+      "proposal": {
+        "status": "abstained",
+        "reason": "No supported exact instruction signature"
+      },
+      "verification": null
+    },
+    {
+      "cell": {
+        "id": "upper7-O1",
+        "upper": 7,
+        "optimization": "O1"
+      },
+      "target_sha256": "2d743b8b0f5e310130197a004c5e0c07e40e12f6e5bf65746ad91a52d1ad9cb8",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 7
+          },
+          "target_sha256": "2d743b8b0f5e310130197a004c5e0c07e40e12f6e5bf65746ad91a52d1ad9cb8",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "2d743b8b0f5e310130197a004c5e0c07e40e12f6e5bf65746ad91a52d1ad9cb8",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 7
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      }
+    },
+    {
+      "cell": {
+        "id": "upper7-O2",
+        "upper": 7,
+        "optimization": "O2"
+      },
+      "target_sha256": "905c9267e878438e5341a321611b7d436b14eb16fd4b93badc8f8395946808d0",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 7
+          },
+          "target_sha256": "905c9267e878438e5341a321611b7d436b14eb16fd4b93badc8f8395946808d0",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "905c9267e878438e5341a321611b7d436b14eb16fd4b93badc8f8395946808d0",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 7
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      }
+    },
+    {
+      "cell": {
+        "id": "upper7-Os",
+        "upper": 7,
+        "optimization": "Os"
+      },
+      "target_sha256": "94b0d7aabc586fa8ed6e17d0f9d2380c206aa26c902c78510b9fc601f14c1c17",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 7
+          },
+          "target_sha256": "94b0d7aabc586fa8ed6e17d0f9d2380c206aa26c902c78510b9fc601f14c1c17",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "94b0d7aabc586fa8ed6e17d0f9d2380c206aa26c902c78510b9fc601f14c1c17",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 7
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      }
+    },
+    {
+      "cell": {
+        "id": "upper23-O0",
+        "upper": 23,
+        "optimization": "O0"
+      },
+      "target_sha256": "119fafe12a4210e7ded0cc54740ab34aa9834c21a7a4e5ac844841e6273d0365",
+      "proposal": {
+        "status": "abstained",
+        "reason": "No supported exact instruction signature"
+      },
+      "verification": null
+    },
+    {
+      "cell": {
+        "id": "upper23-O1",
+        "upper": 23,
+        "optimization": "O1"
+      },
+      "target_sha256": "be1cc5176667689fc7522fdbf045bb4103a42ea6113808357e50f3277afbe7f5",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 23
+          },
+          "target_sha256": "be1cc5176667689fc7522fdbf045bb4103a42ea6113808357e50f3277afbe7f5",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "be1cc5176667689fc7522fdbf045bb4103a42ea6113808357e50f3277afbe7f5",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 23
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 8,
+            "actual": 8,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 9,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 11,
+            "actual": 11,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 12,
+            "actual": 12,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 13,
+            "actual": 13,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 14,
+            "actual": 14,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 15,
+            "actual": 15,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 16,
+            "actual": 16,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 17,
+            "actual": 17,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 18,
+            "actual": 18,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 19,
+            "actual": 19,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 20,
+            "actual": 20,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 21,
+            "actual": 21,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 22,
+            "actual": 22,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      }
+    },
+    {
+      "cell": {
+        "id": "upper23-O2",
+        "upper": 23,
+        "optimization": "O2"
+      },
+      "target_sha256": "187b073f0810eba1f68b3065d49b8f39154ddb272a6bdb7ba5ab4f47f4a094c8",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 23
+          },
+          "target_sha256": "187b073f0810eba1f68b3065d49b8f39154ddb272a6bdb7ba5ab4f47f4a094c8",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "187b073f0810eba1f68b3065d49b8f39154ddb272a6bdb7ba5ab4f47f4a094c8",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 23
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 8,
+            "actual": 8,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 9,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 11,
+            "actual": 11,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 12,
+            "actual": 12,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 13,
+            "actual": 13,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 14,
+            "actual": 14,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 15,
+            "actual": 15,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 16,
+            "actual": 16,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 17,
+            "actual": 17,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 18,
+            "actual": 18,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 19,
+            "actual": 19,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 20,
+            "actual": 20,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 21,
+            "actual": 21,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 22,
+            "actual": 22,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      }
+    },
+    {
+      "cell": {
+        "id": "upper23-Os",
+        "upper": 23,
+        "optimization": "Os"
+      },
+      "target_sha256": "f462b5113f036446ef552e37b4ac8da8367401780f5041198a88c71b7ec3b315",
+      "proposal": {
+        "proposal": {
+          "claim": {
+            "kind": "clamp",
+            "lower": 0,
+            "upper": 23
+          },
+          "target_sha256": "f462b5113f036446ef552e37b4ac8da8367401780f5041198a88c71b7ec3b315",
+          "evidence_indices": [
+            1
+          ]
+        },
+        "status": "unverified_hypothesis",
+        "method": "exact_observed_ARM64_signature",
+        "signature_index": 1,
+        "instruction_addresses": [
+          "0000000100000478",
+          "000000010000047c",
+          "0000000100000480",
+          "0000000100000484",
+          "0000000100000488",
+          "000000010000048c",
+          "0000000100000490",
+          "0000000100000494",
+          "0000000100000498",
+          "000000010000049c",
+          "00000001000004a0"
+        ],
+        "scope": "Narrow signature hypothesis only; verify execution on approved owned inputs. Addresses are virtual disassembly addresses, not file offsets. Not a general decompiler or formal equivalence proof."
+      },
+      "verification": {
+        "target_sha256": "f462b5113f036446ef552e37b4ac8da8367401780f5041198a88c71b7ec3b315",
+        "claim": {
+          "kind": "clamp",
+          "lower": 0,
+          "upper": 23
+        },
+        "status": "supported_on_tested_inputs",
+        "cases": [
+          {
+            "input": -64,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -63,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -62,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -61,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -60,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -59,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -58,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -57,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -56,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -55,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -54,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -53,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -52,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -51,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -50,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -49,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -48,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -47,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -46,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -45,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -44,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -43,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -42,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -41,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -40,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -39,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -38,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -37,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -36,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -35,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -34,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -33,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -32,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -31,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -30,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -29,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -28,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -27,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -26,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -25,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -24,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -23,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -22,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -21,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -20,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -19,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -18,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -17,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -16,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -15,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -14,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -13,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -12,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -11,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -10,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -9,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -8,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -7,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -6,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -5,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -4,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -3,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -2,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": -1,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 0,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1,
+            "expected": 1,
+            "actual": 1,
+            "returncode": 0
+          },
+          {
+            "input": 2,
+            "expected": 2,
+            "actual": 2,
+            "returncode": 0
+          },
+          {
+            "input": 3,
+            "expected": 3,
+            "actual": 3,
+            "returncode": 0
+          },
+          {
+            "input": 4,
+            "expected": 4,
+            "actual": 4,
+            "returncode": 0
+          },
+          {
+            "input": 5,
+            "expected": 5,
+            "actual": 5,
+            "returncode": 0
+          },
+          {
+            "input": 6,
+            "expected": 6,
+            "actual": 6,
+            "returncode": 0
+          },
+          {
+            "input": 7,
+            "expected": 7,
+            "actual": 7,
+            "returncode": 0
+          },
+          {
+            "input": 8,
+            "expected": 8,
+            "actual": 8,
+            "returncode": 0
+          },
+          {
+            "input": 9,
+            "expected": 9,
+            "actual": 9,
+            "returncode": 0
+          },
+          {
+            "input": 10,
+            "expected": 10,
+            "actual": 10,
+            "returncode": 0
+          },
+          {
+            "input": 11,
+            "expected": 11,
+            "actual": 11,
+            "returncode": 0
+          },
+          {
+            "input": 12,
+            "expected": 12,
+            "actual": 12,
+            "returncode": 0
+          },
+          {
+            "input": 13,
+            "expected": 13,
+            "actual": 13,
+            "returncode": 0
+          },
+          {
+            "input": 14,
+            "expected": 14,
+            "actual": 14,
+            "returncode": 0
+          },
+          {
+            "input": 15,
+            "expected": 15,
+            "actual": 15,
+            "returncode": 0
+          },
+          {
+            "input": 16,
+            "expected": 16,
+            "actual": 16,
+            "returncode": 0
+          },
+          {
+            "input": 17,
+            "expected": 17,
+            "actual": 17,
+            "returncode": 0
+          },
+          {
+            "input": 18,
+            "expected": 18,
+            "actual": 18,
+            "returncode": 0
+          },
+          {
+            "input": 19,
+            "expected": 19,
+            "actual": 19,
+            "returncode": 0
+          },
+          {
+            "input": 20,
+            "expected": 20,
+            "actual": 20,
+            "returncode": 0
+          },
+          {
+            "input": 21,
+            "expected": 21,
+            "actual": 21,
+            "returncode": 0
+          },
+          {
+            "input": 22,
+            "expected": 22,
+            "actual": 22,
+            "returncode": 0
+          },
+          {
+            "input": 23,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 24,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 25,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 26,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 27,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 28,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 29,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 30,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 31,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 32,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 33,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 34,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 35,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 36,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 37,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 38,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 39,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 40,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 41,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 42,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 43,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 44,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 45,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 46,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 47,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 48,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 49,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 50,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 51,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 52,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 53,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 54,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 55,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 56,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 57,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 58,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 59,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 60,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 61,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 62,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 63,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": 64,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          },
+          {
+            "input": -1000000,
+            "expected": 0,
+            "actual": 0,
+            "returncode": 0
+          },
+          {
+            "input": 1000000,
+            "expected": 23,
+            "actual": 23,
+            "returncode": 0
+          }
+        ],
+        "counterexamples": [],
+        "scope": "Finite tests only; no universal equivalence, source recovery, or safety guarantee"
+      }
+    }
+  ],
+  "abstained": 2,
+  "supported_on_tested_inputs": 6,
+  "scope": "Eight related owned synthetic variants. Frozen signature rules; abstentions retained. No LLM evaluation, real-app coverage or universal proof."
+}
