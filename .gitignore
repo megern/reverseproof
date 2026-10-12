@@ -4,3 +4,9 @@ build/
 .venv/
 
 dist/
+
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+reviews/
+.review-pending-*

@@ -1,5 +1,11 @@
 # ReverseProof
 
+## Version 1.0.0
+
+Static multi-target review. Processes up to 100 distinct <=64-MiB owned target files, retains per-target errors and static evidence, and produces local HTML/JSON. macOS Command Line Tools required. Never executes the target binary or lets a model choose tools. Static hypotheses are not behavioral verification; the existing digest-bound verify-owned workflow remains separate.
+
+See the [complete local workflow](docs/v1-workflow.md) for installation, commands, review artifacts and limits. Earlier preview notes below describe their historical tagged revisions.
+
 ## Audit a verification report without executing a binary (local development)
 
 `reverseproof audit-report /absolute/local/verification.json` recomputes expected
